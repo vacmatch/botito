@@ -18,6 +18,7 @@
     "hubot-scripts": "~2.5.16",
     "hubot-slack": "git://github.com/ssaavedra/hubot-slack.git#28ae280",
     "hubot-bitbucket-pr": "~0.1.1",
+    "cheerio": "0.18.0",
     "hubot": "~2.11.0"
   },
   "engines": {
