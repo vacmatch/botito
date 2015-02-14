@@ -1,3 +1,4 @@
+# vim: set expandtab ts=2 sw=2 sts=2:
 # Description:
 #   Example scripts for you to examine and try out.
 #
@@ -10,6 +11,32 @@
 
 module.exports = (robot) ->
 
+  robot.hear (new RegExp "(good|nice|beautiful) " + robot.name, "i"), (msg) ->
+    phrases = [ "Oh, you are so charming",
+                "That's because I washed myself this morning!",
+                "I'm here to serve, sir!",
+                "Sir, you are right :D",
+                "That's because you are the best!"
+              ]
+    msg.send msg.random phrases
+
+  salute = (msg) ->
+    msg.reply "Hi!"
+    msg.send "Now c'mon, let's do some work, shall we?"
+  robot.hear (new RegExp "(hi|hello) " + robot.name, "i"), salute
+  robot.respond /(hi|hello)/i, salute
+
+  robot.respond /apologize(!)*/i, (msg) ->
+    apologies = [ "I am so sorry!",
+                  "This should not have happened, I...STACK OVERFLOW",
+                  "Wops, that.. sorry. You should send me a pull request!",
+                  "I was programmed to do that. Please, send me a pull request and I will hope to be a better bot next time"
+                ]
+    msg.send msg.random apologies
+
+  #
+  #
+  #
   # robot.hear /badger/i, (msg) ->
   #   msg.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
   #

@@ -12,12 +12,11 @@
     "hubot-diagnostics": "0.0.1",
     "hubot-youtube": "~0.1.2",
     "hubot-pugme": "~0.1.0",
-    "hubot-rules": "~0.1.0",
     "hubot-heroku-keepalive": "0.0.4",
     "hubot-google-translate": "~0.1.0",
     "hubot-redis-brain": "0.0.2",
     "hubot-scripts": "~2.5.16",
-    "hubot-slack": "~3.2.1",
+    "hubot-slack": "git://github.com/ssaavedra/hubot-slack.git#28ae280",
     "hubot-bitbucket-pr": "~0.1.1",
     "hubot": "~2.11.0"
   },
