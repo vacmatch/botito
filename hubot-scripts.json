@@ -1,5 +1,6 @@
 [
   "aww.coffee",
   "commitmessage.coffee",
-  "devexcuse.coffee"
+  "devexcuse.coffee",
+  "gerrit.coffee"
 ]
