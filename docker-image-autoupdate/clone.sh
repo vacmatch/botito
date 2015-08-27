@@ -12,7 +12,7 @@ if [ "x${_INCEPTION}" = "x" ]; then
 	# If there is a new one cloned
 	if [ -f /app/docker-image-autoupdate/clone.sh ]; then
 		# Prefer the downloaded one
-		exec bash /app/docker-image-autoupdate/clone.sh
+		exec bash /app/docker-image-autoupdate/clone.sh $@
 	fi
 fi
 
