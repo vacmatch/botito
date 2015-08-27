@@ -16,6 +16,12 @@ if [ "x${_INCEPTION}" = "x" ]; then
 	fi
 fi
 
+if [ ! -f ~/.ssh/id_rsa.pub ]; then
+	cat /dev/zero | ssh-keygen -t rsa -b 2048 -N ""
+	echo "Please ensure you have the following key in gerrit: "
+	cat ~/.ssh/id_rsa.pub
+fi
+
 if [ "x${REDIS_PORT}" != "x" ]; then
 	echo "Using Redis brain at ${REDIS_PORT}"
 	export REDIS_URL="${REDIS_PORT}"
