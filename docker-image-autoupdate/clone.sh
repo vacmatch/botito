@@ -29,6 +29,13 @@ if [ ! -f ~/.ssh/known_hosts ]; then
 EOF
 fi
 
+if [ ! -f ~/.ssh/config ]; then
+	cat >~/.ssh/config <<EOF
+Host *
+User botito
+EOF
+
+fi
 if [ "x${REDIS_PORT}" != "x" ]; then
 	echo "Using Redis brain at ${REDIS_PORT}"
 	export REDIS_URL="${REDIS_PORT}"
