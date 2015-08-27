@@ -16,6 +16,11 @@ if [ "x${INCEPTION}" = "x" ]; then
 	fi
 fi
 
+if [ "x${REDIS_PORT}" != "x" ]; then
+	echo "Using Redis brain at ${REDIS_PORT}"
+	export REDIS_URL="${REDIS_PORT}"
+fi
+
 git pull && \
 	echo -n "Fetched botito rev. " && \
 	git rev-parse --short HEAD && \
