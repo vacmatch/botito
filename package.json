@@ -13,11 +13,11 @@
     "hubot-pugme": "~0.1.0",
     "hubot-google-translate": "~0.1.0",
     "hubot-redis-brain": "0.0.2",
-    "hubot-scripts": "~2.5.16",
+    "hubot-scripts": "~2.16.2",
     "hubot-slack": "git://github.com/ssaavedra/hubot-slack.git#28ae280",
     "hubot-bitbucket-pr": "~0.1.1",
     "cheerio": "0.18.0",
-    "hubot": "~2.11.0"
+    "hubot": "~2.16.0"
   },
   "engines": {
     "node": "0.10.x"

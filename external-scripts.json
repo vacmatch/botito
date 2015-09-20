@@ -5,6 +5,7 @@
   "hubot-google-images",
   "hubot-google-translate",
   "hubot-pugme",
+  "hubot-redis-brain",
   "hubot-maps",
   "hubot-shipit"
 ]
